@@ -17,3 +17,5 @@ git push : push this live to a remote repository where my project is hosted.
 cat testkey : show your ssh key
 cat testkey.pub : show your ssh key
 type testkey.pub | clip : to copy your SSH Key from the terminal
+cat testkey.pub | clip : to copy your SSH key from the terminal
+
