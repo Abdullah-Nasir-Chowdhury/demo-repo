@@ -32,6 +32,7 @@ type `ls` in the command terminal
 To print out your testkey, type: `cat testkey.pub`
 It starts with ssh-rsa and ends with your email.
 </br>
+
 To print out your private testkey, type: `cat testkey`
 
 #### Copy your SSH Key
@@ -43,3 +44,38 @@ use `pbcopy <~/testkey.pub>` on Mac
 Go to your SSH and GPG keys in your github account
 Create New ssh key, give whatever title you want, and add SSH key.
 The only thing left to do, is to make sure your local git command line interface knows about the key you just generated.
+
+#### Adding your SSH key to the ssh-agent
+Next follow the steps in this like:
+</br>
+![https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent]
+
+## git clone:
+To clone your repo, head over to the repo, and find the one with the ssh key, copy it, and type `git clone [the_copied_ssh_clone]` in the terminal
+
+## ls:
+Using `ls` you can find the folders in your cloned folder.
+
+## ls -Force:
+Using `ls -Force` you can find the hidden folders in your cloned repository.
+
+## Making changes to the repo:
+You can now make changes to the repo in your local machine and see what changes you made using `git status` it will show you the modified and untracked files
+
+## git status
+shows you the modified and untracked files
+
+## git add .
+adds all the modified and untracked files for commiting
+
+## git add [file_name]
+adds only the file_name for commiting 
+
+## git commit -m ["message"] -m ["description"]
+commit for pushing the added files to your github
+
+## git push
+push the files to the repo
+
+## git push origin master
+

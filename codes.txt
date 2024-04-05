@@ -1,4 +1,7 @@
+All commands:
+
 cd [directory]
+cd .. : go to previous directory
 ls : shows all files
 ls -Force : shows hidden files
 git status : shows modified and untracked files 
@@ -9,3 +12,8 @@ git commit -m "Added index.html" -m "some description": -m means message, ideall
 but we have still only saved our code locally and it isn't live on github. Make it live using git push
 
 git push : push this live to a remote repository where my project is hosted.
+
+
+cat testkey : show your ssh key
+cat testkey.pub : show your ssh key
+type testkey.pub | clip : to copy your SSH Key from the terminal
