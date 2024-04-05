@@ -1,0 +1,5 @@
+cd [directory]
+ls : shows all files
+ls -Force : shows hidden files
+git status : shows modified and untracked files 
+git add. : tell git to track all the files listed in status (in both untracked and modified section)
