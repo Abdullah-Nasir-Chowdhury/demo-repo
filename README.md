@@ -77,9 +77,13 @@ commit for pushing the added files to your github
 ## git push
 push the files to the repo
 
-## git push origin master
-pushes to the origin/main branch
+## git branch --list
+to check the list of your branches use `git branch --list`
 
+## git push origin main
+pushes to the origin/main branch
+if you see that you have master the main branch: `git push origin master`
+else `git push origin main`
 
 # How to upload from your local machine to github?
 
