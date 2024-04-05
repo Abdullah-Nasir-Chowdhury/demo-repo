@@ -20,6 +20,26 @@ It should like this: <b>`ssh-keygen -t rsa -b 4096 -C "email@example.com"`</b>
 
 You will then be asked to enter the file in which you wish to save the key, either press Enter or provide a file name, the file doesn't have to be a pre-existing file, like you can use the name [testkey], without the brackets or using quotes or anything, just type the name, the file will automatically be generated. I pressed enter.
 Next you will need to provide a passphrase, you could provide one or press enter(no passphrase). And your key will be generated. </br>
-`Enter file in which to save teh key(/Users/..../id_rsa): testkey` </br>
+`Enter file in which to save the key (C:\Users\HP/.ssh/id_rsa): testkey` </br>
 `Enter passphrase (empty for no passphrase): [Enter]`
 </br>
+
+#### Find your testkey:
+Your test key might be in the previous folder. So, go back to the folder, and:
+type `ls` in the command terminal 
+
+</br>
+To print out your testkey, type: `cat testkey.pub`
+It starts with ssh-rsa and ends with your email.
+</br>
+To print out your private testkey, type: `cat testkey`
+
+#### Copy your SSH Key
+Do not use `ctrl+c` or `cmd+c` </br>
+use `pbcopy </testkey.pub>` on Windows
+use `pbcopy <~/testkey.pub>` on Mac
+
+#### GitHub SSH Key setup
+Go to your SSH and GPG keys in your github account
+Create New ssh key, give whatever title you want, and add SSH key.
+The only thing left to do, is to make sure your local git command line interface knows about the key you just generated.

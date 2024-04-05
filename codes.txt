@@ -2,4 +2,10 @@ cd [directory]
 ls : shows all files
 ls -Force : shows hidden files
 git status : shows modified and untracked files 
-git add. : tell git to track all the files listed in status (in both untracked and modified section)
+git add. : tell git to track all the files listed in status (in both untracked and modified section). Once done, all files are ready to be committed.
+git add [file_name] : only tracks the individual folder you tell it to track
+git commit -m "Added index.html" -m "some description": -m means message, ideally the message should have the what and why behind the commit you are making, second -m is a message added to the description box.
+
+but we have still only saved our code locally and it isn't live on github. Make it live using git push
+
+git push : push this live to a remote repository where my project is hosted.
